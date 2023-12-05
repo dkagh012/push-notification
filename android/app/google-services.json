@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "979855561785",
+    "project_id": "wallet-app-notifications",
+    "storage_bucket": "wallet-app-notifications.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979855561785:android:73eed234ce6237be0469e8",
+        "android_client_info": {
+          "package_name": "com.jaycabasagaga.pushnotification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8upfrxHx6V1t_L3BwC92szkOVJTYe6Dc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
