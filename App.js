@@ -1,25 +1,31 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { usePushNotifications } from './usePushNotification';
+import { StatusBar } from "expo-status-bar";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import PushScreen from "./screens/push";
+import LoginScreen from "./screens/login";
+import WebScreen from "./screens/WebScreen.js";
+import LoadingScreen from "./screens/loading";
+
+// Import the 'firebase/app' module to initialize Firebase
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
-
-  const { expoPushToken } = usePushNotifications()
-  console.log(expoPushToken);
-
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          options={{ headerShown: false }}
+          name="loading"
+          component={LoadingScreen}
+        />
+        <Stack.Screen
+          options={{ headerShown: false }}
+          name="　"
+          component={WebScreen}
+        />
+      </Stack.Navigator>
       <StatusBar style="auto" />
-    </View>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

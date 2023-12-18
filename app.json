@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.jaycabasagaga.pushnotification"
@@ -23,7 +21,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.jaycabasagaga.pushnotification",
+      "package": "",
       "googleServicesFile": "./google-services.json"
     },
     "web": {
@@ -31,7 +29,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "64a110fb-ccf5-4eea-bf3c-168ca5460173"
+        "projectId": "93a22c09-a331-4998-97f2-bc4e350178a7"
       }
     }
   }
