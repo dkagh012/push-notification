@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   StyleSheet,
   TextInput,
@@ -35,6 +35,9 @@ export default function LoginScreen({ navigation }) {
       console.error("Error during login:", error);
     }
   };
+  useEffect(() => {
+    StatusBar.setBarStyle("dark-content");
+  }, []);
 
   return (
     <View style={styles.container}>

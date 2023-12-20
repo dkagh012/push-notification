@@ -1,8 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import PushScreen from "./screens/push";
-import LoginScreen from "./screens/login";
 import WebScreen from "./screens/WebScreen.js";
 import LoadingScreen from "./screens/loading";
 
@@ -25,7 +23,7 @@ export default function App() {
           component={WebScreen}
         />
       </Stack.Navigator>
-      <StatusBar style="auto" />
+      <StatusBar style="light" backgroundColor="black" />
     </NavigationContainer>
   );
 }
