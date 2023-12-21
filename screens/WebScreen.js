@@ -13,6 +13,7 @@ import { useNavigation } from "@react-navigation/native";
 
 export default function WebScreen({ route }) {
   const { expoPushToken } = route.params;
+  console.log(expoPushToken.data);
   const webview = useRef();
   let changeUrlScript;
   const navigation = useNavigation();
