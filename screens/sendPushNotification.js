@@ -1,6 +1,5 @@
 async function sendPushNotification(expoPushToken, title, message) {
   const token = expoPushToken.data;
-  console.log(token);
 
   try {
     const response = await fetch(

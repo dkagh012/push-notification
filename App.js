@@ -19,7 +19,7 @@ export default function App() {
         />
         <Stack.Screen
           options={{ headerShown: false }}
-          name="　"
+          name="WebView"
           component={WebScreen}
         />
       </Stack.Navigator>

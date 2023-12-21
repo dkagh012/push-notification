@@ -18,8 +18,7 @@ export default function LoadingScreen({ navigation }) {
 
   useEffect(() => {
     if (count === 0) {
-      console.log(expoPushToken);
-      navigation.navigate("　", { expoPushToken });
+      navigation.navigate("WebView", { expoPushToken });
     }
   }, [count, expoPushToken, navigation]);
 
